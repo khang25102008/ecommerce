@@ -1,0 +1,27 @@
+#cart-icon{
+	width:25px;
+	display: inline-block;
+	margin-left: 15px;
+}
+.chg-quantity{
+	width: 12px;
+	cursor: pointer;
+	display: block;
+	margin-top: 5px;
+	transition:.1s;
+}
+.navbar{
+	color: darkgrey;
+
+}
+#cart-total{
+	color: skyblue;
+}
+.btn{
+	background-color: beige; 
+	color: darkgreen;
+}
+.product-image{
+	max-height: 200px;
+	
+}

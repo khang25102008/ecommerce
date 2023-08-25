@@ -1,0 +1,32 @@
+{% extends "store/base.html" %}
+
+{% block content %}      
+
+
+{%csrf_token%}
+{%load static%}
+<!--Login--> 
+<div class="container py-5">
+	<h1>Login</h1>
+	<form action="." method="post">
+        {% csrf_token %}
+
+        {% comment %} Form không cần lưu ý những lỗi có thể xảy ra {% endcomment %}
+
+        <div class="mb-3">
+            <label class="inline-block mb-2">Username</label> <br>
+            {{form.username}}
+        </div>
+
+        <div class="mb-3">
+            <label class="inline-block mb-2">Password</label> <br> 
+            {{form.password}}
+        </div>
+
+        <button>Submit</button>
+    </form>
+  <p class="text-center">Don't have an account? <a href="/signup">Create an account</a>.</p>
+  
+</div>
+
+{% endblock %}
