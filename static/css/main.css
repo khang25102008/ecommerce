@@ -1,3 +1,7 @@
+body { 
+	height: 100vh;
+}
+
 #cart-icon{
 	width:25px;
 	display: inline-block;
@@ -17,11 +21,16 @@
 #cart-total{
 	color: skyblue;
 }
-.btn{
-	background-color: beige; 
-	color: darkgreen;
-}
+
 .product-image{
 	max-height: 200px;
 	
+}
+.brand h2{
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+.hello{
+	margin-right: 15px;
+	margin-bottom: 0;
 }
